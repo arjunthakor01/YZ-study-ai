@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>YZ Study – Free learning for every student</title>
+<meta name="description" content="Free AI study help for school, college and competitive exams: notes, flashcards, mind maps, quizzes, exam papers and courses in Indian and world languages.">
+<meta name="theme-color" content="#1f5eff">
+<link rel="canonical" href="https://YOURDOMAIN.com/">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<meta property="og:type" content="website"><meta property="og:title" content="YZ Study – Free learning for every student">
+<meta property="og:description" content="AI notes, flashcards, quizzes, exam papers and free courses in every Indian language.">
+<meta property="og:url" content="https://YOURDOMAIN.com/"><meta name="twitter:card" content="summary">
+<style>
+:root{--bg:#fff;--fg:#0f1b33;--mu:#5b6785;--bl:#1f5eff;--bl2:#e8f0ff;--bd:#dbe3f3;--cd:#f6f9ff;--on:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1220;--fg:#e8eefc;--mu:#9aa8c7;--bl:#6b97ff;--bl2:#15233f;--bd:#24324f;--cd:#111b30;--on:#0b1220}}
+:root[data-theme="dark"]{--bg:#0b1220;--fg:#e8eefc;--mu:#9aa8c7;--bl:#6b97ff;--bl2:#15233f;--bd:#24324f;--cd:#111b30;--on:#0b1220}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Sans Devanagari",sans-serif}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--bd);display:flex;gap:6px;align-items:center;padding:10px 16px;overflow-x:auto}
+nav b{color:var(--bl);font-size:20px;margin-right:auto;white-space:nowrap}
+nav a{color:var(--fg);text-decoration:none;padding:6px 12px;border-radius:99px;font-size:14px;white-space:nowrap}
+nav a:hover{background:var(--bl2)}
+section{max-width:1000px;margin:0 auto;padding:44px 16px}
+.hero{text-align:center;padding-top:56px}
+h1{font-size:clamp(30px,6vw,52px);line-height:1.15;margin:0 0 12px}
+h1 span{color:var(--bl)}
+h2{font-size:28px;margin:0 0 6px}
+p.s{color:var(--mu);margin:0 0 22px}
+.btn{background:var(--bl);color:var(--on);border:0;border-radius:10px;padding:11px 20px;font:600 15px inherit;font-family:inherit;cursor:pointer;text-decoration:none;display:inline-block}
+.btn.o{background:var(--bl2);color:var(--bl)}
+.stats{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+.stats span{background:var(--bl2);color:var(--bl);padding:6px 14px;border-radius:99px;font-size:14px;font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.card{background:var(--cd);border:1px solid var(--bd);border-radius:14px;padding:16px;text-align:left;color:var(--fg);font:inherit;cursor:pointer}
+.card:hover{border-color:var(--bl)}
+.card i{font-style:normal;font-size:26px}
+.card h3{margin:6px 0 2px;font-size:16px}
+.card p{margin:0;color:var(--mu);font-size:13px}
+.ai{background:var(--cd);border:1px solid var(--bd);border-radius:18px;padding:16px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.tabs button{border:1px solid var(--bd);background:var(--bg);color:var(--fg);border-radius:99px;padding:6px 13px;font:inherit;font-size:14px;cursor:pointer}
+.tabs button.on{background:var(--bl);color:var(--on);border-color:var(--bl)}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0;align-items:center}
+input,textarea,select{background:var(--bg);color:var(--fg);border:1px solid var(--bd);border-radius:10px;padding:10px;font:inherit;max-width:100%}
+textarea{width:100%;min-height:110px;resize:vertical}
+#out{margin-top:14px;min-height:40px;overflow-x:auto}
+#out h3,#out h4{margin:14px 0 4px}
+#out li{margin:2px 0}
+.fc{perspective:800px}.fc .card{min-height:110px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:15px}
+.fc .card.f{background:var(--bl2);color:var(--bl)}
+.tree,.tree ul{list-style:none;margin:0;padding-left:18px;border-left:2px solid var(--bd)}
+.tree{border:0;padding:0}
+.tree li{margin:6px 0}
+.tree li>span{background:var(--bl2);padding:3px 10px;border-radius:8px;display:inline-block}
+.tree>li>span{background:var(--bl);color:var(--on);font-weight:700}
+.note{font-size:13px;color:var(--mu)}
+#cv{position:fixed;inset:0;z-index:20;background:var(--bg);overflow:auto;padding:env(safe-area-inset-top,0px) 16px env(safe-area-inset-bottom,0px)}#cv[hidden]{display:none}.cvi{max-width:760px;margin:0 auto;padding:20px 0 60px}.bar{height:8px;background:var(--bl2);border-radius:9px;margin:10px 0 16px;overflow:hidden}.bar i{display:block;height:100%;width:0;background:var(--bl);transition:width .3s}nav select{margin-left:6px}
+footer{text-align:center;color:var(--mu);font-size:13px;padding:30px 16px}
+</style></head><body>
+<nav><b>🎓 YZ Study</b><a href="#ai">YZ AI</a><a href="#courses">Courses</a><a href="#exams">Exams</a><a href="#langs">Languages</a><a href="#pg">Progress</a><a href="#hub">Study Hub</a><button id="inst" class="btn o" style="padding:5px 12px;font-size:13px" hidden>Install app</button><select id="ui" onchange="tr(this.value)"><option value="en">English</option><option value="hi">हिन्दी</option></select></nav>
+
+<section class="hero"><h1>Learn anything, <span>in your language</span></h1>
+<p class="s">Free study help for school, college and competitive exams. Notes, flashcards, mind maps, reports, audio and exam papers made by YZ AI.</p>
+<a class="btn" href="#ai">Try YZ AI free</a> <a class="btn o" href="#courses">Browse courses</a>
+<div class="stats"><span>100% free</span><span>All Indian languages</span><span>World languages</span><span>Exam papers</span></div></section>
+
+<section id="ai"><h2>✨ YZ AI Study Assistant</h2><p class="s">Pick a tool, choose a language, type a topic or add material, then press Go.</p>
+<div class="ai">
+<div class="tabs" id="tabs"></div>
+<div class="row"><label>Answer language: <input id="lang" list="ll" value="English" size="14"></label>
+<label>Level: <select id="lvl"><option>School</option><option>College</option><option>Competitive exam</option><option>Beginner</option></select></label></div>
+<textarea id="q"></textarea>
+<div class="row"><input type="file" id="fl" accept="image/*,.txt,.md,.csv" multiple>
+<button class="btn" id="go">Go</button><button class="btn o" id="sp" hidden>🔊 Listen</button><button class="btn o" id="st" hidden>⏹ Stop</button></div>
+<div class="note" id="fn">Add images (notes, diagrams, sums) or text files. For PDFs or videos, paste the text or transcript.</div>
+<div id="out"></div></div></section>
+
+<div class="adslot" style="max-width:1000px;margin:0 auto;padding:0 16px"></div>
+<section id="hub"><h2>🧰 Study Hub</h2><p class="s">Planner and streak, doubt chat, timed papers and diagrams.</p><div class="ai"><div class="tabs" id="htabs"></div><div id="hbody"></div></div></section>
+<section id="courses"><h2>📚 Courses</h2><p class="s">Tap a course and YZ AI builds a free roadmap for you.</p><div class="grid" id="cg"></div></section>
+<section id="exams"><h2>🏆 Competitive Exams</h2><p class="s">Tap an exam to get an important practice paper based on the usual past-year blueprint.</p><div class="grid" id="eg"></div></section>
+<div class="adslot" style="max-width:1000px;margin:0 auto;padding:0 16px"></div>
+<section id="langs"><h2>🌏 Languages</h2><p class="s">YZ AI answers in any language. Tap one, or type any language in the AI box above.</p>
+<h3>Indian languages</h3><div class="stats" id="il" style="justify-content:flex-start"></div>
+<h3>World languages</h3><div class="stats" id="wl" style="justify-content:flex-start"></div></section>
+<section id="pg"><h2>📈 Your progress</h2><p class="s">Lessons and quizzes you finish are saved on this device.</p><div id="pgb"></div></section>
+<footer>© YZ Study · Free for every student · The website interface is in English; YZ AI replies in your chosen language.</footer>
+<div id="cv" hidden></div><datalist id="ll"></datalist>
+
+<script>
+(function(){
+function img(f){return new Promise((res,rej)=>{const u=URL.createObjectURL(f),i=new Image();i.onload=()=>{const k=Math.min(1,1280/Math.max(i.width,i.height)),c=document.createElement("canvas");c.width=i.width*k;c.height=i.height*k;c.getContext("2d").drawImage(i,0,0,c.width,c.height);URL.revokeObjectURL(u);res({type:"image/jpeg",data:c.toDataURL("image/jpeg",.8).split(",")[1]})};i.onerror=rej;i.src=u})}
+async function s(msgs,o){o=o||{};
+const im=o.images?await Promise.all(o.images.slice(0,2).map(img)):[];
+const r=await fetch("/api/ai",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({messages:msgs,images:im})});
+const d=await r.json().catch(()=>({}));
+if(!r.ok)throw{code:r.status==429?"rate_limited":"error",message:d.error||"error"};
+if(o.onText)o.onText({text:d.text,delta:d.text});
+return{text:d.text,truncated:false}}
+s.limits=async()=>({images:true});
+window.claude={use:async n=>n=="sample"?s:null};
+})();
+</script>
+<script>
+const $=s=>document.querySelector(s),esc=t=>t.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+const IN="Hindi,Bengali,Telugu,Marathi,Tamil,Urdu,Gujarati,Kannada,Malayalam,Odia,Punjabi,Assamese,Maithili,Santali,Kashmiri,Nepali,Sindhi,Konkani,Dogri,Bodo,Manipuri (Meitei),Sanskrit,Bhojpuri,Rajasthani,Haryanvi,Chhattisgarhi,Magahi,Awadhi,Tulu,Garhwali,Kumaoni,Khasi,Mizo,Garo,Hinglish".split(",");
+const WL="English,Spanish,French,German,Portuguese,Italian,Dutch,Russian,Ukrainian,Polish,Czech,Greek,Turkish,Arabic,Hebrew,Persian,Chinese (Simplified),Chinese (Traditional),Japanese,Korean,Vietnamese,Thai,Indonesian,Malay,Filipino,Swahili,Amharic,Hausa,Yoruba,Zulu,Afrikaans,Swedish,Norwegian,Danish,Finnish,Hungarian,Romanian,Bulgarian,Serbian,Croatian,Sinhala,Burmese,Khmer,Lao,Mongolian,Pashto,Kurdish,Uzbek,Kazakh,Georgian,Armenian,Latin".split(",");
+const TTS={Hindi:"hi-IN",Bengali:"bn-IN",Telugu:"te-IN",Marathi:"mr-IN",Tamil:"ta-IN",Urdu:"ur-PK",Gujarati:"gu-IN",Kannada:"kn-IN",Malayalam:"ml-IN",Punjabi:"pa-IN",English:"en-IN",Spanish:"es-ES",French:"fr-FR",German:"de-DE",Arabic:"ar-SA",Japanese:"ja-JP",Korean:"ko-KR",Russian:"ru-RU",Italian:"it-IT",Portuguese:"pt-BR",Hinglish:"hi-IN","Chinese (Simplified)":"zh-CN",Nepali:"ne-NP"};
+const COURSES=[["🤖","AI Fundamentals","Machine learning basics and real uses"],["💬","Prompt Engineering","Write prompts that give great AI results"],["📣","Digital Marketing","SEO, social media, content, email"],["🎯","Performance Marketing","Ads, funnels, ROAS and analytics"],["🎬","Video Editing","Cuts, color, sound, storytelling"],["📊","Data Analytics","Excel, SQL, Python, dashboards"],["🧾","Accounting","Ledgers, GST basics, statements"],["📒","Journals & Ledgers","Double-entry bookkeeping step by step"],["💰","Financial Literacy","Budgeting, saving, loans, insurance"],["📈","Stock Market","Investing basics, risk, mutual funds"],["💻","Programming","Python, web development, logic"],["🗣️","Spoken English","Fluency, grammar, interviews"]];
+const EXAMS=["JEE Main & Advanced","NEET","UPSC Civil Services","SSC CGL","Banking (IBPS/SBI)","CAT / MBA","GATE","CLAT","CUET","NDA","CA Foundation","SAT","GRE","IELTS","TOEFL","GMAT","State PSC","Railway RRB","CBSE Board","ICSE / State Board"];
+const MODES={notes:["📝 Notes","Type a topic or paste a chapter. YZ AI makes clear study notes."],flash:["🃏 Flashcards","Type a topic. YZ AI makes question and answer cards."],report:["📄 Report","Type a report topic. YZ AI writes a structured report."],mind:["🧠 Mind map","Type a topic. YZ AI draws a mind map."],audio:["🎧 Audio","Type a topic, then press Listen to hear it read aloud."],exam:["🧪 Exam paper","Enter exam, subject, class, and paste any past paper pattern if you have it."],solve:["➕ Sums","Type or upload a maths, physics, or accounting problem."],ask:["🔎 Ask","Ask any doubt. YZ AI gives an accurate, simple answer."],quiz:["❓ Quiz","Type a topic. YZ AI makes a 5-question quiz and scores you."]};
+let mode="notes",txt="",ctrl=null;
+$("#ll").innerHTML=[...IN,...WL].map(l=>`<option value="${l}">`).join("");
+const chips=(id,a)=>$(id).innerHTML=a.map(l=>`<button class="btn o" style="padding:5px 12px;font-size:13px" onclick="setL('${l}')">${l}</button>`).join("");
+chips("#il",IN);chips("#wl",WL);
+function setL(l){$("#lang").value=l;location.hash="#ai"}
+function setMode(m){mode=m;$("#q").placeholder=MODES[m][1];$("#sp").hidden=$("#st").hidden=m!="audio";document.querySelectorAll("#tabs button").forEach(b=>b.classList.toggle("on",b.dataset.m==m))}
+$("#tabs").innerHTML=Object.entries(MODES).map(([k,v])=>`<button data-m="${k}" onclick="setMode('${k}')">${v[0]}</button>`).join("");
+$("#cg").innerHTML=COURSES.map((c,i)=>`<button class="card" onclick="course(${i})"><i>${c[0]}</i><h3>${c[1]}</h3><p>${c[2]}</p></button>`).join("");
+$("#eg").innerHTML=EXAMS.map((e,i)=>`<button class="card" onclick="exam(${i})"><h3>🏆 ${e}</h3><p>Important practice paper</p></button>`).join("");
+function course(i){setMode("ask");$("#q").value=`Create a free beginner-to-advanced roadmap for "${COURSES[i][1]}": modules, weekly plan, free resources, projects, and a final quiz.`;go();location.hash="#ai"}
+function exam(i){setMode("exam");$("#q").value=`Exam: ${EXAMS[i]}. Make an important practice paper following the usual past-year blueprint.`;go();location.hash="#ai"}
+function md(t){let h=esc(t).replace(/^### (.*)$/gm,"<h4>$1</h4>").replace(/^#{1,2} (.*)$/gm,"<h3>$1</h3>").replace(/\*\*(.+?)\*\*/g,"<b>$1</b>").replace(/^[-*] (.*)$/gm,"<li>$1</li>").replace(/(<li>.*<\/li>\n?)+/g,m=>"<ul>"+m+"</ul>");return h.replace(/\n(?!<)/g,"<br>")}
+$("#fl").onchange=async e=>{txt="";const f=[...e.target.files];$("#fn").textContent=f.length?f.map(x=>x.name).join(", "):"";for(const x of f)if(!x.type.startsWith("image/"))txt+=`\n[File ${x.name}]\n`+(await x.text()).slice(0,15000)}
+const J=a=>{const m=a.replace(/```json|```/g,"").trim();return JSON.parse(m.slice(Math.min(...[m.indexOf("["),m.indexOf("{")].filter(i=>i>=0))))};
+async function go(){
+const q=$("#q").value.trim();if(!q&&!$("#fl").files.length){$("#out").textContent="Please type a topic first.";return}
+const out=$("#out");out.textContent="Thinking…";
+let s;try{s=await claude.use("sample")}catch(e){s=null}
+if(!s){out.textContent="YZ AI is not available right now. Please try again later.";return}
+const L=$("#lang").value||"English",lv=$("#lvl").value,base=`You are YZ AI, a friendly expert tutor on a free student website. Student level: ${lv}. Write everything in ${L} (keep technical terms in English in brackets when helpful). Be accurate; if unsure, say so instead of guessing.\n`;
+const P={notes:"Make clear, well-organised study notes with headings, bullet points, key terms, formulas and a short summary.",flash:'Make 12 flashcards. Reply ONLY with a JSON array like [{"q":"...","a":"..."}].',report:"Write a structured report: title, introduction, sections with headings, key findings, conclusion.",mind:'Make a mind map. Reply ONLY with JSON like {"t":"Topic","c":[{"t":"Branch","c":[{"t":"Leaf"}]}]}, 5-7 branches, 2-4 leaves each.',audio:"Write a friendly spoken explanation script (about 250 words), plain sentences, no markdown.",exam:"Act as a paper setter. Using the typical blueprint, weightage, question types and marking scheme of previous-year papers for this exam or subject (and any pattern the student pasted), create an important model paper with sections, marks, time limit, and a full answer key. Say that it is a practice paper.",solve:"Solve step by step, show each calculation, give the final answer and a quick check.",ask:"Answer clearly with a simple explanation, an example, and a short summary.",quiz:'Make 5 multiple-choice questions. Reply ONLY with JSON [{"q":"","o":["","","",""],"a":0,"e":"short explanation"}] where a is the index (0-3) of the correct option.'}[mode];
+const opts={cache:false,onText:({text})=>{if(mode!="flash"&&mode!="mind"&&mode!="quiz")out.innerHTML=md(text)}};
+try{const lim=await s.limits?.();const im=[...$("#fl").files].filter(f=>f.type.startsWith("image/"));if(im.length&&lim?.images)opts.images=im;
+const r=await s([{role:"user",content:base+P+"\n\nStudent input:\n"+q+txt}],opts),t=r.text;
+if(mode=="flash"){const d=J(t);out.innerHTML='<div class="grid fc">'+d.map(c=>`<div class="card" data-q="${esc(c.q).replace(/"/g,"&quot;")}" data-a="${esc(c.a).replace(/"/g,"&quot;")}" onclick="fp(this)">${esc(c.q)}</div>`).join("")+"</div><p class='note'>Tap a card to flip it.</p>"}
+else if(mode=="mind"){const T=n=>`<li><span>${esc(n.t)}</span>${n.c?.length?"<ul>"+n.c.map(T).join("")+"</ul>":""}</li>`;out.innerHTML='<ul class="tree">'+T(J(t))+"</ul>"}
+else if(mode=="quiz")qz(J(t),out,$("#q").value);else out.innerHTML=md(t);
+if(mode=="audio")out.dataset.t=t}catch(e){out.textContent=e.code=="rate_limited"?"Too many requests. Please wait a moment and try again.":e.code=="not_granted"?"Permission was not granted. Press Go again and allow YZ AI.":"Something went wrong. Please try again."}}
+function fp(c){const f=c.classList.toggle("f");c.textContent=f?c.dataset.a:c.dataset.q}
+$("#go").onclick=go;
+$("#sp").onclick=()=>{const t=$("#out").dataset.t;if(!t){$("#out").textContent="Press Go first to create the audio script.";return}speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t),c=TTS[$("#lang").value];if(c)u.lang=c;speechSynthesis.speak(u)};
+$("#st").onclick=()=>speechSynthesis.cancel();
+const ST=(()=>{try{return JSON.parse(localStorage.getItem("yz"))||{}}catch(e){return{}}})();ST.done=ST.done||{};ST.quiz=ST.quiz||[];ST.les=ST.les||{};
+const sv=()=>{try{localStorage.setItem("yz",JSON.stringify(ST))}catch(e){}};
+async function ai(p,on){const s=await claude.use("sample");if(!s)throw{code:"na"};return(await s([{role:"user",content:p}],{cache:false,onText:on})).text}
+const LG=()=>$("#lang").value||"English",SYS=()=>`You are YZ AI, a friendly expert tutor on a free student website. Write in ${LG()}, keep technical terms in English in brackets. Be accurate.\n`;
+const QJ='Reply ONLY with JSON [{"q":"","o":["","","",""],"a":0,"e":"short explanation"}] where a is the index (0-3) of the correct option.';
+function qz(d,box,title){if(!Array.isArray(d)||!d.length)throw 0;let i=0,sc=0;const n=d.length;
+function show(){const q=d[i];box.innerHTML=`<p class="note">${i+1}/${n}</p><h3>${esc(q.q)}</h3>`+q.o.map((o,k)=>`<button class="card" style="display:block;width:100%;margin:6px 0" data-k="${k}">${esc(o)}</button>`).join("")+'<div id="ex"></div>';
+box.querySelectorAll("button").forEach(b=>b.onclick=()=>{if(b.dataset.done)return;const k=+b.dataset.k,ok=k==q.a;if(ok)sc++;box.querySelectorAll("button").forEach((x,j)=>{x.dataset.done=1;if(j==q.a)x.style.borderColor="#16a34a";else if(j==k)x.style.borderColor="#dc2626"});
+$("#ex").innerHTML=`<p>${ok?"✅ Correct!":"❌ Not quite."} ${esc(q.e||"")}</p><button class="btn" id="nx">${i+1<n?"Next":"Finish"}</button>`;$("#nx").onclick=()=>{++i<n?show():fin()}})}
+function fin(){ST.quiz.push({t:title||"Quiz",s:sc,n});touch();sv();prog();box.innerHTML=`<h3>🎉 Score: ${sc}/${n}</h3><p>${sc==n?"Perfect!":sc>=n/2?"Good work, keep going!":"Review the topic and try again."}</p>`}
+show()}
+let CI=-1,CL=[];
+async function course(i){CI=i;const c=COURSES[i],v=$("#cv");v.hidden=false;document.body.style.overflow="hidden";
+v.innerHTML=`<div class="cvi"><button class="btn o" onclick="cx()">← Back</button><h2>${c[0]} ${esc(c[1])}</h2><p class="s">${esc(c[2])}</p><div class="bar"><i id="pb"></i></div><div id="lsn">Loading lessons…</div><div id="lc"></div></div>`;
+const key=c[1]+"|"+LG();let L=ST.les[key];
+if(!L){try{L=J(await ai(SYS()+`List 8 lessons, beginner to advanced, for the course "${c[1]}". Reply ONLY with a JSON array of short lesson titles.`));ST.les[key]=L;sv()}catch(e){$("#lsn").textContent="Could not load lessons. Please go back and try again.";return}}
+lessons(L)}
+function lessons(L){CL=L;const c=COURSES[CI][1],dn=k=>ST.done[c+"|"+k];
+$("#lsn").innerHTML=L.map((t,k)=>`<button class="card" style="display:block;width:100%;margin:6px 0" onclick="lesson(${k})">${dn(k)?"✅":"⭕"} ${k+1}. ${esc(t)}</button>`).join("");
+$("#pb").style.width=Math.round(L.filter((_,k)=>dn(k)).length/L.length*100)+"%"}
+async function lesson(k){const c=COURSES[CI][1],b=$("#lc");b.innerHTML="<p>Thinking…</p>";b.scrollIntoView({behavior:"smooth"});
+try{const t=await ai(SYS()+`Teach lesson "${CL[k]}" from the course "${c}": simple explanation, real examples, key points, and one small practice task.`,({text})=>b.innerHTML=md(text));
+b.innerHTML=md(t)+`<div class="row"><button class="btn" onclick="fin2(${k})">✅ Mark complete</button><button class="btn o" onclick="lq(${k})">❓ Quiz me</button></div><div id="lqz"></div>`}catch(e){b.textContent="Something went wrong. Please try again."}}
+function fin2(k){ST.done[COURSES[CI][1]+"|"+k]=1;touch();sv();lessons(CL);prog()}
+async function lq(k){const b=$("#lqz");b.textContent="Making your quiz…";try{qz(J(await ai(SYS()+`Make 5 multiple-choice questions on "${CL[k]}" (course ${COURSES[CI][1]}). `+QJ)),b,COURSES[CI][1]+": "+CL[k])}catch(e){b.textContent="Could not make the quiz. Please try again."}}
+function cx(){$("#cv").hidden=true;document.body.style.overflow=""}
+function prog(){const dn=Object.keys(ST.done).length,q=ST.quiz,avg=q.length?Math.round(q.reduce((a,x)=>a+x.s/x.n,0)/q.length*100):0;
+$("#pgb").innerHTML=`<div class="grid"><div class="card"><i>✅</i><h3>${dn}</h3><p>Lessons completed</p></div><div class="card"><i>❓</i><h3>${q.length}</h3><p>Quizzes taken</p></div><div class="card"><i>🎯</i><h3>${avg}%</h3><p>Average quiz score</p></div></div>`+(q.length?"<h3>Recent quizzes</h3>"+q.slice(-5).reverse().map(x=>`<p>${esc(x.t)} — <b>${x.s}/${x.n}</b></p>`).join(""):"<p class='note'>Finish a lesson or take a quiz to see your progress. It is saved in this browser.</p>")+'<p><button class="btn o" onclick="rs()">Reset progress</button></p>'}
+function rs(){ST.done={};ST.quiz=[];sv();prog()}
+const TR=[[".hero h1","सीखें कुछ भी, <span>अपनी भाषा में</span>"],[".hero p.s","स्कूल, कॉलेज और प्रतियोगी परीक्षाओं के लिए मुफ़्त पढ़ाई में मदद। YZ AI नोट्स, फ्लैशकार्ड, माइंड मैप, रिपोर्ट, ऑडियो और परीक्षा पेपर बनाता है।"],[".hero a.btn:not(.o)","YZ AI मुफ़्त आज़माएँ"],[".hero a.btn.o","कोर्स देखें"],["nav a:nth-of-type(2)","कोर्स"],["nav a:nth-of-type(3)","परीक्षाएँ"],["nav a:nth-of-type(4)","भाषाएँ"],["nav a:nth-of-type(5)","प्रगति"],["#ai h2","✨ YZ AI स्टडी असिस्टेंट"],["#ai>p.s","एक टूल चुनें, भाषा चुनें, विषय लिखें या सामग्री जोड़ें, फिर आगे बढ़ें दबाएँ।"],["#go","आगे बढ़ें"],["#courses h2","📚 कोर्स"],["#courses p.s","कोई कोर्स चुनें और YZ AI आपके लिए मुफ़्त पाठ-योजना बनाएगा।"],["#exams h2","🏆 प्रतियोगी परीक्षाएँ"],["#exams p.s","किसी परीक्षा पर टैप करें और पिछले वर्षों के पैटर्न पर आधारित अभ्यास पेपर पाएँ।"],["#langs h2","🌏 भाषाएँ"],["#langs>p.s","YZ AI किसी भी भाषा में जवाब देता है। एक भाषा चुनें।"],["#pg h2","📈 आपकी प्रगति"],["#pg>p.s","पूरे किए गए पाठ और क्विज़ इस डिवाइस पर सहेजे जाते हैं।"],["footer","© YZ Study · हर विद्यार्थी के लिए मुफ़्त"]];
+const TABHI=["📝 नोट्स","🃏 फ्लैशकार्ड","📄 रिपोर्ट","🧠 माइंड मैप","🎧 ऑडियो","🧪 परीक्षा पेपर","➕ सवाल","🔎 पूछें","❓ क्विज़"];
+function tr(l){TR.forEach(([s,h])=>{const e=$(s);if(!e)return;if(!e.dataset.en)e.dataset.en=e.innerHTML;e.innerHTML=l=="hi"?h:e.dataset.en});
+document.querySelectorAll("#tabs button").forEach((b,k)=>{if(!b.dataset.en)b.dataset.en=b.textContent;b.textContent=l=="hi"?TABHI[k]:b.dataset.en});
+$("#lang").value=l=="hi"?"Hindi":"English";document.documentElement.lang=l}
+prog();
+ST.streak=ST.streak||{last:"",n:0,best:0};ST.chat=ST.chat||[];
+const HT=["📅 Planner & streak","💬 Doubt chat","⏱️ Timed paper","🎨 Diagrams"];let TM=null;
+const td=()=>new Date().toLocaleDateString("en-CA"),yd=()=>new Date(Date.now()-864e5).toLocaleDateString("en-CA");
+function touch(){const s=ST.streak,t=td();if(s.last!==t){s.n=s.last===yd()?s.n+1:1;s.last=t;s.best=Math.max(s.best,s.n);sv()}}
+function hub(k){clearInterval(TM);document.querySelectorAll("#htabs button").forEach((b,i)=>b.classList.toggle("on",i==k));[hub0,hub1,hub2,hub3][k]()}
+$("#htabs").innerHTML=HT.map((t,i)=>`<button onclick="hub(${i})">${t}</button>`).join("");
+function hub0(){const s=ST.streak,ok=s.last===td();
+$("#hbody").innerHTML=`<p style="font-size:20px">🔥 <b>${ok||s.last===yd()?s.n:0}</b> day streak · best ${s.best}</p><button class="btn ${ok?"o":""}" id="ck">${ok?"✅ Studied today":"I studied today"}</button><h3>Study planner</h3><div class="row"><input id="pe" placeholder="Exam or subjects" size="24"><input type="date" id="pd"><label>Hours/day <input type="number" id="ph" value="3" min="1" max="12" style="width:70px"></label></div><button class="btn" id="pgn">Make my plan</button><div id="pout">${ST.plan?md(ST.plan):""}</div>`;
+$("#ck").onclick=()=>{touch();hub0()};
+$("#pgn").onclick=async()=>{const e=$("#pe").value.trim(),d=$("#pd").value;if(!e){$("#pout").textContent="Please enter your exam or subjects.";return}
+const left=d?Math.ceil((new Date(d)-new Date())/864e5):0;$("#pout").textContent="Planning…";
+try{ST.plan=await ai(SYS()+`Make a realistic day-by-day (or week-by-week if long) study plan for: ${e}. ${left>0?left+" days are left.":"No exam date given, plan 4 weeks."} Study ${$("#ph").value} hours per day. Include revision days, mock tests and short breaks, as a simple checklist.`);sv();$("#pout").innerHTML=md(ST.plan)}catch(x){$("#pout").textContent="Something went wrong. Please try again."}}}
+function hub1(){$("#hbody").innerHTML='<div id="cw" style="max-height:340px;overflow:auto"></div><div class="row"><input id="ci" placeholder="Ask your doubt…" style="flex:1;min-width:160px"><button class="btn" id="cs">Send</button><button class="btn o" id="cc">Clear</button></div><p class="note">YZ AI remembers your recent messages on this device.</p>';
+const draw=()=>{$("#cw").innerHTML=ST.chat.map(m=>`<p style="${m.r=="u"?"text-align:right;":""}"><b>${m.r=="u"?"You":"YZ AI"}:</b> ${m.r=="u"?esc(m.t):md(m.t)}</p>`).join("");$("#cw").scrollTop=1e9};draw();
+$("#cc").onclick=()=>{ST.chat=[];sv();draw()};
+const send=async()=>{const t=$("#ci").value.trim();if(!t)return;$("#ci").value="";ST.chat.push({r:"u",t});draw();
+const hist=ST.chat.slice(-9,-1).map(m=>(m.r=="u"?"Student: ":"YZ AI: ")+m.t.slice(0,1500)).join("\n");
+try{ST.chat.push({r:"a",t:await ai(SYS()+"Continue this tutoring chat. Answer the student's latest message clearly and briefly, using earlier messages as memory.\n"+hist+"\nStudent: "+t)})}catch(e){ST.chat.push({r:"a",t:"Sorry, something went wrong. Please try again."})}
+ST.chat=ST.chat.slice(-20);sv();draw()};
+$("#cs").onclick=send;$("#ci").onkeydown=e=>{if(e.key=="Enter")send()}}
+function hub2(){$("#hbody").innerHTML=`<div class="row"><input id="xe" placeholder="Exam / subject / chapter" size="26"><select id="xm"><option value="30">30 min</option><option value="60" selected>60 min</option><option value="90">90 min</option></select><select id="xn"><option>10</option><option selected>15</option></select> questions</div><button class="btn" id="xg">Start paper</button><p class="note">Built from the usual past-year pattern and topic weightage. It is practice, not the real paper.</p><div id="xo"></div>`;
+$("#xg").onclick=async()=>{const e=$("#xe").value.trim(),n=+$("#xn").value,m=+$("#xm").value,o=$("#xo");if(!e){o.textContent="Please enter the exam or subject.";return}o.textContent="Setting the paper…";
+let d;try{d=J(await ai(SYS()+`Act as a paper setter. Using the typical blueprint, topic weightage and difficulty of past-year papers for "${e}", make ${n} multiple-choice questions. `+QJ));if(!Array.isArray(d)||!d.length)throw 0}catch(x){o.textContent="Could not make the paper. Please try again.";return}
+pp(d,o,e,m)}}
+function pp(d,o,title,m){clearInterval(TM);let t=m*60,done=0;
+o.innerHTML=`<p style="position:sticky;top:60px;background:var(--bg);padding:6px 0;font-weight:700">⏱️ <span id="tm"></span></p>`+d.map((q,i)=>`<h4>${i+1}. ${esc(q.q)}</h4>`+q.o.map((x,k)=>`<label style="display:block;margin:4px 0"><input type="radio" name="q${i}" value="${k}"> ${esc(x)}</label>`).join("")).join("")+'<p><button class="btn" id="sb">Submit paper</button></p>';
+const tick=()=>{$("#tm").textContent=Math.floor(t/60)+":"+String(t%60).padStart(2,"0");if(t--<=0)sub()};
+function sub(){if(done)return;done=1;clearInterval(TM);let sc=0;const rv=d.map((q,i)=>{const c=o.querySelector(`input[name=q${i}]:checked`),a=c?+c.value:-1,ok=a==q.a;if(ok)sc++;return`<h4>${ok?"✅":"❌"} ${i+1}. ${esc(q.q)}</h4><p>Your answer: ${a<0?"not answered":esc(q.o[a])}<br>Correct: <b>${esc(q.o[q.a])}</b><br>${esc(q.e||"")}</p>`}).join("");
+ST.quiz.push({t:"Paper: "+title,s:sc,n:d.length});touch();sv();prog();o.innerHTML=`<h3>🎉 Score: ${sc}/${d.length}</h3>`+rv}
+$("#sb").onclick=sub;tick();TM=setInterval(tick,1000)}
+function hub3(){$("#hbody").innerHTML='<textarea id="dg" style="min-height:70px" placeholder="Describe a diagram, e.g. labelled human heart, water cycle, Pythagoras theorem"></textarea><button class="btn" id="dgo">Draw it</button><p class="note">YZ AI draws clean educational diagrams and illustrations (not photos).</p><div id="dgout"></div>';
+$("#dgo").onclick=async()=>{const q=$("#dg").value.trim(),o=$("#dgout");if(!q)return;o.textContent="Drawing…";
+try{const t=await ai(`Draw an educational diagram or illustration: ${q}. Reply ONLY with one complete SVG (viewBox 0 0 600 400, white background rect, clear labels in ${LG()}, readable font sizes, bright simple colors). No scripts, no markdown.`);
+const m=t.match(/<svg[\s\S]*<\/svg>/i);if(!m)throw 0;const r=new DOMParser().parseFromString(m[0],"image/svg+xml").documentElement;if(r.nodeName!="svg")throw 0;
+r.querySelectorAll("script,foreignObject,iframe,image").forEach(x=>x.remove());
+[r,...r.querySelectorAll("*")].forEach(e=>[...e.attributes].forEach(a=>{if(/^on/i.test(a.name)||/javascript:/i.test(a.value))e.removeAttribute(a.name)}));
+r.removeAttribute("width");r.removeAttribute("height");r.style.cssText="width:100%;height:auto;background:#fff;border-radius:12px";
+o.innerHTML="";o.appendChild(document.importNode(r,true))}catch(e){o.textContent="Could not draw that. Try describing it more simply."}}}
+hub(0);
+setMode("notes");
+</script><div class="note" style="text-align:center;padding:0 16px 30px">AI answers are made by Google Gemini's free service. Please do not type personal or private details. <a href="/privacy.html" style="color:var(--bl)">Privacy</a></div>
+<script>
+/* FILL THESE IN AFTER YOU HAVE THEM. Leave empty and nothing loads. */
+window.YZ={GA:"",ADS:"",SLOT:""}; /* GA: "G-XXXXXXX" from Google Analytics. ADS: "ca-pub-XXXX" and SLOT from AdSense (after approval). */
+(function(){const c=window.YZ;
+if(c.GA){const s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id="+c.GA;document.head.appendChild(s);window.dataLayer=[];window.gtag=function(){dataLayer.push(arguments)};gtag("js",new Date());gtag("config",c.GA)}
+if(c.ADS&&c.SLOT){const s=document.createElement("script");s.async=1;s.crossOrigin="anonymous";s.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client="+c.ADS;document.head.appendChild(s);
+document.querySelectorAll(".adslot").forEach(d=>{d.innerHTML='<ins class="adsbygoogle" style="display:block" data-ad-client="'+c.ADS+'" data-ad-slot="'+c.SLOT+'" data-ad-format="auto" data-full-width-responsive="true"></ins>';(window.adsbygoogle=window.adsbygoogle||[]).push({})})}})();
+</script>
+<script>
+if("serviceWorker" in navigator)addEventListener("load",()=>navigator.serviceWorker.register("/sw.js").catch(()=>{}));
+let dp;addEventListener("beforeinstallprompt",e=>{e.preventDefault();dp=e;$("#inst").hidden=false});
+$("#inst").onclick=async()=>{if(dp){dp.prompt();await dp.userChoice;dp=null;$("#inst").hidden=true}};
+</script></body></html>
